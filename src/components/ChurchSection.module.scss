@@ -1,0 +1,27 @@
+.churchSection {
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+  color: #333;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-family: inter, sans-serif;
+}
+
+.image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}

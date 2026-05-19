@@ -4,14 +4,21 @@ import styles from "./VideoIntro.module.scss";
 export default function VideoIntro({ onFinish }) {
   const [hidden, setHidden] = useState(false);
   const videoRef = useRef(null);
+  const audioRef = useRef(null);
 
   const startVideo = () => {
     if (videoRef.current) {
       videoRef.current.play();
       videoRef.current.onended = () => {
         setHidden(true);
-        onFinish(); 
+        onFinish();
       };
+    }
+
+    if (audioRef.current) {
+      audioRef.current.play().catch((err) => {
+        console.log("Audio blocked until user interacts:", err);
+      });
     }
   };
 
@@ -26,7 +33,15 @@ export default function VideoIntro({ onFinish }) {
         className={styles.videoFull}
         preload="auto"
       />
-      <div className={styles.tapText}>Toca para comenzar</div>
+
+      {/* AUDIO OCULTO */}
+      <audio
+        ref={audioRef}
+        src="music.mp3"
+        preload="auto"
+      />
+
+      <div className={styles.tapText}>Toca y abre la invitación</div>
     </div>
   );
 }

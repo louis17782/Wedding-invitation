@@ -1,8 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageController from "../components/PageController.jsx";
+import CountdownTimer from "../components/CountDown.jsx";
+import ChurchSection from "../components/ChurchSection.jsx";
 ---
 
 <Layout>
 	<PageController client:load />
+	<CountdownTimer
+	 client:visible 
+		eventDate="2026-08-15t07:00"
+	/>
+	<ChurchSection client:visible />
 </Layout>
