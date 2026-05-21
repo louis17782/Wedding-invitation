@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PageController from "../components/PageController.jsx";
 import CountdownTimer from "../components/CountDown.jsx";
 import ChurchSection from "../components/ChurchSection.jsx";
+import Heart from '../components/Heart';
 ---
 
 <Layout>
@@ -12,4 +13,5 @@ import ChurchSection from "../components/ChurchSection.jsx";
 		eventDate="2026-08-15t07:00"
 	/>
 	<ChurchSection client:visible />
+	<Heart />
 </Layout>
