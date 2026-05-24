@@ -3,7 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import PageController from "../components/PageController.jsx";
 import CountdownTimer from "../components/CountDown.jsx";
 import ChurchSection from "../components/ChurchSection.jsx";
-import Heart from '../components/Heart';
+import Heart from "../components/Heart";
+import Dress from "../components/Dress";
+import Gifts from "../components/Gifts";
+import Gallery from '../components/Gallery.astro';
 ---
 
 <Layout>
@@ -14,4 +17,7 @@ import Heart from '../components/Heart';
 	/>
 	<ChurchSection client:visible />
 	<Heart />
+	<Dress client:visible />
+	<Gifts client:visible  />
+	<Gallery />
 </Layout>
