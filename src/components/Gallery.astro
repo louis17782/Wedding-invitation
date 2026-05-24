@@ -1,0 +1,88 @@
+---
+import img1 from "/public/imagen1.jpg";
+import img2 from "/public/imagen2.jpg";
+import img3 from "/public/imagen1.jpg";
+import img4 from "/public/imagen2.jpg";
+import img5 from "/public/imagen1.jpg";
+import img6 from "/public/imagen2.jpg";
+import img7 from "/public/imagen1.jpg";
+import img8 from "/public/imagen2.jpg";
+---
+<section> 
+    <h2>Nosotros</h2>
+    <div id="carouselimg" class="carouselimg">
+      <div id="carousel-track" class="carousel-track">
+        <img src={img1.src} alt="Imagen" />
+        <img src={img2.src} alt="Imagen" />
+        <img src={img3.src} alt="Imagen" />
+        <img src={img4.src} alt="Imagen" />
+        <img src={img5.src} alt="Imagen" />
+        <img src={img6.src} alt="Imagen" />
+        <img src={img7.src} alt="Imagen" />
+        <img src={img8.src} alt="Imagen" />
+      </div>
+    </div>
+  </section>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const carousel = document.getElementById('carouselimg');
+
+    // Duplicar contenido para efecto infinito
+    track.innerHTML += track.innerHTML;
+
+    let position = 0;
+    const speed = 1.4; // Ajusta la velocidad
+
+    function moverCarrusel() {
+      position -= speed;
+      if (Math.abs(position) >= track.scrollWidth / 2) {
+        position = 0; // Reinicia sin parpadeo
+      }
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(moverCarrusel);
+    }
+
+    moverCarrusel();
+  });
+</script>
+
+<style lang="scss">
+
+  h2 {
+    margin: 100px 0 0;
+    text-align: center;
+  }
+
+  .carouselimg {
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem;
+
+    .carousel-track {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      will-change: transform;
+
+      img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  @media (min-width: 600px) { 
+    section {
+      padding: 80px 100px;
+    }
+    h2 {
+      text-align: center;
+       margin: 50px 0 0;
+    }
+  }
+</style>

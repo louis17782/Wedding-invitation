@@ -1,5 +1,5 @@
 .churchSection {
-  padding: 80px 20px;
+  margin: 20px 20px;
   text-align: center;
   background: #ffffff;
   color: #333;
@@ -22,6 +22,10 @@
 .image {
   width: 100%;
   max-width: 420px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 1024px) {
+  .image {
+    max-width: 720px;
+  }
 }

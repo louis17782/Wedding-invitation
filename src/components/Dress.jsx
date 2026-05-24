@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
-import styles from "./ChurchSection.module.scss";
+import styles from "./Dress.module.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ChurchSection = () => {
+const Dress = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -23,20 +23,20 @@ const ChurchSection = () => {
 
   return (
       <section ref={sectionRef} className={styles.churchSection}>
-        <h2 className={styles.title}>Lugar de la Ceremonia</h2>
+        <h2 className={styles.title}>Dress code</h2>
 
         <p className={styles.address}>
-          Iglesia La Consolación<br />
-          Calle Principal, Cabudare, Venezuela
+          no debe ir de blanco<br />
+          importante
         </p>
 
         <img
-          src="iglesia.png"
-          alt="Iglesia donde será la ceremonia"
+          src="dress.png"
+          alt="dress code"
           className={styles.image}
         />
       </section>
   );
 };
 
-export default ChurchSection;
+export default Dress;

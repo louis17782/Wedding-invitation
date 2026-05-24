@@ -1,4 +1,4 @@
-import styles from "./Heart.module.scss"
+import styles from "./Heart.module.scss";
 
 const Heart = () => {
   return (
@@ -7,7 +7,7 @@ const Heart = () => {
       <div className={styles.heart}></div>
       <div className={styles.linea}></div>
     </div>
-  )
-}
+  );
+};
 
 export default Heart;
