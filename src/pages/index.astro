@@ -7,6 +7,7 @@ import Heart from "../components/Heart";
 import Dress from "../components/Dress";
 import Gifts from "../components/Gifts";
 import Gallery from '../components/Gallery.astro';
+import Form from "../components/RSVForm";
 ---
 
 <Layout>
@@ -20,4 +21,5 @@ import Gallery from '../components/Gallery.astro';
 	<Dress client:visible />
 	<Gifts client:visible  />
 	<Gallery />
+	<Form client:visible />
 </Layout>
