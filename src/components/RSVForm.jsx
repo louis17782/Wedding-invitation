@@ -16,7 +16,7 @@ const RSVForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:3000/api/v1/guests", {
+    const res = await fetch("https://wedding-guests-api-production.up.railway.app/api/v1/guests", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
