@@ -1,19 +1,20 @@
 .wrapper {
   width: 100%;
-  max-width: 420px;
+  max-width: 375px;
   margin: 60px auto;
   padding: 20px;
   text-align: center;
 }
 
 h3 {
-  font-size: 26px;
+  font-family: inter, sans-serif;
   margin-bottom: 5px;
   font-weight: 600;
 }
 
 p {
-  font-size: 15px;
+  font-family: inter, sans-serif;
+  font-size: 1.2rem;
   margin-bottom: 25px;
   color: #555;
 }
@@ -28,7 +29,7 @@ p {
 
 /* LABELS */
 .form label {
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #333;
 }
@@ -36,7 +37,6 @@ p {
 /* INPUTS */
 .form input[type="text"],
 .form textarea {
-  width: 100%;
   padding: 12px 14px;
   border-radius: 10px;
   border: 1.5px solid #ddd;

@@ -31,10 +31,9 @@ const Gifts = () => {
 
   return (
     <section className={styles.Section}>
-      <h2 className={styles.title}>Regalos</h2>
-
+      <h2>Regalos</h2>
       <div className={styles.box} onClick={toggleBox}>
-        <div className={styles.boxTitle}>Aportación</div>
+        <div className={styles.boxTitle}>Dale aqui</div>
 
         <div ref={contentRef} className={styles.dropdown}>
           <p>

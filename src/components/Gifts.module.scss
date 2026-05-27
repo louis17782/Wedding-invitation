@@ -3,9 +3,10 @@
   text-align: center;
 }
 
-.title {
-  font-size: 28px;
-  margin-bottom: 20px;
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 /* Caja completa */
@@ -28,7 +29,6 @@
 /* Título dentro de la caja */
 .boxTitle {
   font-size: 18px;
-  font-weight: bold;
 }
 
 /* Contenido desplegable */
