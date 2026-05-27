@@ -34,7 +34,7 @@ const CountdownTimer = ({ eventDate }) => {
 
   return (
     <section className={styles.countdownSection}>
-      <h2 className={styles.title}>Cuenta atrás</h2>
+      <h1>Cuenta atrás</h1>
       <p>Para el día más especial de nuestras vidas</p>
 
       <div className={styles.timer}>

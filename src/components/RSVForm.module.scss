@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-h3 {
+h2 {
   font-family: inter, sans-serif;
   margin-bottom: 5px;
   font-weight: 600;
@@ -101,5 +101,11 @@ button:hover {
 
   h3 {
     font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 500px;
   }
 }

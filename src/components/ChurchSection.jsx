@@ -23,7 +23,7 @@ const ChurchSection = () => {
 
   return (
       <section ref={sectionRef} className={styles.churchSection}>
-        <h2 className={styles.title}>Lugar de la Ceremonia</h2>
+        <h1 className={styles.title}>Lugar de la Ceremonia</h1>
 
         <p className={styles.address}>
           Iglesia La Consolación<br />

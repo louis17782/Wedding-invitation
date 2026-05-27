@@ -23,7 +23,7 @@ const Dress = () => {
 
   return (
       <section ref={sectionRef} className={styles.churchSection}>
-        <h2 className={styles.title}>Dress code</h2>
+        <h1>Dress code</h1>
 
         <p className={styles.address}>
           no debe ir de blanco<br />

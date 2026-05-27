@@ -6,6 +6,7 @@
   font-size: 2.3rem;
   opacity: 0.9;
   font-family: inter, sans-serif;
+  color: #493d36;
 }
 
 .caret {
@@ -111,6 +112,12 @@
 
   &:active {
     transform: scale(0.92);
+  }
+}
+
+@media (min-width: 1024px) {
+  .caret, .cta {
+    color: #fff;
   }
 }
 

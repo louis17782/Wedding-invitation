@@ -31,7 +31,7 @@ const Gifts = () => {
 
   return (
     <section className={styles.Section}>
-      <h2>Regalos</h2>
+      <h1>Regalos</h1>
       <div className={styles.box} onClick={toggleBox}>
         <div className={styles.boxTitle}>Dale aqui</div>
 

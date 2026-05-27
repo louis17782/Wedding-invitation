@@ -36,7 +36,7 @@ const RSVForm = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h3>Confirma tu asistencia</h3>
+      <h1>Confirma tu asistencia</h1>
       <p>Esperamos contar contigo</p>
 
       <form onSubmit={handleSubmit} className={styles.form}>
