@@ -1,0 +1,38 @@
+.section {
+  h1 {
+    margin: 70px 0;
+    text-align: center;
+  }
+}
+
+.carouselimg {
+  overflow: hidden;
+  width: 100%;
+
+  .carouselTrack {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    will-change: transform;
+
+    img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 80px 100px;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 50px 0 0;
+  }
+}

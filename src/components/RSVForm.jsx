@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../components/RSVForm.module.scss";
 
-const RSVForm = () => {
+const RSVForm = ({ onSubmitComplete }) => {
   const [form, setForm] = useState({
     name: "",
     assistance: "",
@@ -16,21 +16,24 @@ const RSVForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://wedding-guests-api-production.up.railway.app/api/v1/guests", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        guest: {
-          name: form.name,
-          assistance: form.assistance,
-          comment: form.comment,
-        },
-      }),
-    });
+    const res = await fetch(
+      "http://localhost:3000/api/v1/guests",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          guest: {
+            name: form.name,
+            assistance: form.assistance,
+            comment: form.comment,
+          },
+        }),
+      }
+    );
 
     if (res.ok) {
-      alert("Gracias por confirmar tu asistencia");
-      setForm({ name: "", assistance: "", comment: "" });
+      // Avisamos al componente padre (PageController)
+      onSubmitComplete(form.assistance); // "si" o "no"
     }
   };
 
@@ -40,7 +43,6 @@ const RSVForm = () => {
       <p>Esperamos contar contigo</p>
 
       <form onSubmit={handleSubmit} className={styles.form}>
-        
         <label>Nombre completo</label>
         <input
           type="text"
@@ -82,7 +84,7 @@ const RSVForm = () => {
           onChange={handleChange}
         />
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar confirmación</button>
       </form>
     </div>
   );
