@@ -115,7 +115,7 @@ const IndexController = () => {
       <Heart />
       <Dress client:visible />
       <Gifts client:visible />
-      <Gallery />
+      <Gallery client:visible />
       <RSVForm onSubmitComplete={handleFormSubmit} />
 
       {/* AUDIO OCULTO (no suena hasta que submitted=true) */}
