@@ -26,8 +26,9 @@ const Dress = () => {
         <h1>Dress code</h1>
 
         <p className={styles.address}>
-          no debe ir de blanco<br />
-          importante
+        Queremos verte brillar en nuestro gran día. Te pedimos asistir con ropa formal (vestido para las damas, traje para los caballeros).
+        <br />
+        ¡Ayúdanos a mantener la tradición! Agradecemos evitar el color blanco(solo la novia) y los pantalones blue jeans.
         </p>
 
         <img

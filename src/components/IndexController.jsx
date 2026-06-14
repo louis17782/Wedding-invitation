@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import PageController from "./PageController.jsx";
 import CountdownTimer from "./CountDown.jsx";
 import ChurchSection from "./ChurchSection.jsx";
+import ClubSection from "./Club.jsx";
 import Heart from "./Heart.jsx";
 import Dress from "./Dress.jsx";
 import Gifts from "./Gifts.jsx";
@@ -111,7 +112,10 @@ const IndexController = () => {
     <>
       <PageController client:load />
       <CountdownTimer client:visible eventDate="2026-08-15t07:00" />
+      <Heart />
       <ChurchSection client:visible />
+      <Heart />
+      <ClubSection client:visible />
       <Heart />
       <Dress client:visible />
       <Gifts client:visible />

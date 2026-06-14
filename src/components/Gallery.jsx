@@ -20,7 +20,7 @@ const Gallery = () => {
     track.innerHTML += track.innerHTML;
 
     let position = 0;
-    const speed = 1.4;
+    const speed = 1;
 
     function moverCarrusel() {
       position -= speed;
