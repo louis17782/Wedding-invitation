@@ -37,9 +37,11 @@ const Gifts = () => {
 
         <div ref={contentRef} className={styles.dropdown}>
           <p>
-            Si lo preferes, hecha la platica en verdes.
+            ¡Gracias por tu compañía en nuestra nueva etapa! 
+            Si quieres tener un detalle con nosotros ¡Suma kilómetros a nuestro viaje! Agradecemos de todo corazón sus aportes económicos.
             <br /><br />
-            En caso de que os resulte más cómodo, también podéis realizar una transferencia. zelle, zinli, facebank, usdt
+            Cuentas: 
+            si deseas en la boda habra una caja donde puedes meter tus sobres.
           </p>
         </div>
       </div>

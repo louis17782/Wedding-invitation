@@ -118,6 +118,7 @@ const IndexController = () => {
       <ClubSection client:visible />
       <Heart />
       <Dress client:visible />
+      <Heart />
       <Gifts client:visible />
       <Gallery client:visible />
       <RSVForm onSubmitComplete={handleFormSubmit} />
