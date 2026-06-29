@@ -59,9 +59,12 @@ const IndexController = () => {
         <audio ref={audioRef} src="/music.mp3" preload="auto" loop />
 
         <div style={{ padding: "2rem", textAlign: "center" }}>
-          <h1>Gracias por avisar</h1>
-          <p>Lástima que no podrás acompañarnos, pero agradecemos mucho tu mensaje.</p>
-          <p>— Luis & Gaby</p>
+          <h1>Gracias por avisarnos!</h1>
+          <p>Tu respuesta sincera es el mejor apoyo para nuestra planificación.
+            Lamentamos que no puedas estar, pero agradecemos enormemente tu sinceridad porque que nos ayuda
+            a mantener la logística en orden... ¡Cero presiones y cero explicaciones! Sabemos que a veces no se puede y ya.
+            No te preocupes por justificarte con nosotros... Un abrazo ❤️.</p>
+          <p>— Gaby & Luis</p>
         </div>
       </>
     );
@@ -99,8 +102,8 @@ const IndexController = () => {
             <h1>Gracias por confirmar tu asistencia</h1>
             <p>Nos hace muchísima ilusión saber que nos acompañarás en este día tan especial.</p>
             <p>Gracias por formar parte de nuestra historia.</p>
-            <p>Te esperamos el 20 de junio en Masia Can Cortada, Barcelona.</p>
-            <p>— Luis & Gaby</p>
+            <p>Te esperamos el 15 de agosto en nuestra ceremonia.</p>
+            <p>— Gaby & Luis </p>
           </div>
         )}
       </>

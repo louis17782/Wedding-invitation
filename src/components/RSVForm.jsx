@@ -40,7 +40,10 @@ const RSVForm = ({ onSubmitComplete }) => {
   return (
     <div className={styles.wrapper}>
       <h1>Confirma tu asistencia</h1>
-      <p>Esperamos contar contigo</p>
+      <p>Tu respuesta honesta es el mejor regalo. Si no puedes asistir, 
+        siéntete con la total libertad de marcar 'No'. Sabemos que a veces no se puede. 
+        No te preocupes por justificarte con nosotros; nuestro cariño sigue intacto. Solo necesitamos 
+        saber el dato exacto para la logística😉</p>
 
       <form onSubmit={handleSubmit} className={styles.form}>
         <label>Nombre completo</label>
