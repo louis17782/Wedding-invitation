@@ -27,7 +27,9 @@ const ChurchSection = () => {
 
         <p className={styles.address}>
           Parroquia Nuestra Señora de la Consolación<br />
-         Av Francia (Calle 11), entre carrera 2 y 3 de la Urb Sta Elena, Barquisimeto.
+         Av Francia (Calle 11), entre Carrera 2 y 3 de la Urb Sta Elena, Barquisimeto.
+         <br />
+         Hora: 7:00 pm
         </p>
 
         <img

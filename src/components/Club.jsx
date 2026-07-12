@@ -27,7 +27,9 @@ const ClubSection = () => {
 
         <p className={styles.address}>
           Casa Blanca Colonial<br />
-          Calle 24 entre carreras 17 y 18, Bqto. (Porton negro a mano izquierda)
+          Calle 24 entre Carreras 17 y 18, Bqto. (Porton negro a mano izquierda)
+          <br />
+          Hora: Despues de la Ceremonia.
         </p>
 
         <img

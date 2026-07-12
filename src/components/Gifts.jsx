@@ -41,7 +41,9 @@ const Gifts = () => {
             Si quieres tener un detalle con nosotros ¡Suma kilómetros a nuestro viaje! Agradecemos de todo corazón sus aportes económicos.
             <br /><br />
             Cuentas: 
-            Zelle: Luirelys.morlets@hotmail.com A nombre de Luirelys Morlets
+            Zelle: Luirelys.morlets@hotmail.com 
+            <br />
+            A nombre de Luirelys Morlets
             <br />
             Si lo desea, contaremos con un buzón en la recepción para tu sobre.
           </p>
